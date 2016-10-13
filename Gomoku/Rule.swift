@@ -13,22 +13,17 @@ class Rule {
             }
         }
         
-        if let stones = placedStonesByColor[.white], stones.count >= minimunValueForWinning {
-            for stoneColumn in stones {
-                if !stones.contains(stoneColumn + 1) && stoneColumn != stones.last {
-                    return false
+        for stone in [Stone.white, .black] {
+            if let stones = placedStonesByColor[stone], stones.count >= minimunValueForWinning {
+                for stoneColumn in stones {
+                    if !stones.contains(stoneColumn + 1) && stoneColumn != stones.last {
+                        return false
+                    }
                 }
+                return true
             }
-            return true
-        } else if let stones = placedStonesByColor[.black], stones.count >= minimunValueForWinning {
-            for stoneColumn in stones {
-                if !stones.contains(stoneColumn + 1) && stoneColumn != stones.last {
-                    return false
-                }
-            }
-            return true
         }
-        
+
         return false
     }
 
