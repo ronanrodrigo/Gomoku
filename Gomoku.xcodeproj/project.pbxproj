@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34827BA11DB041E7002E4062 /* RuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34827BA01DB041E7002E4062 /* RuleTests.swift */; };
+		34827BA31DB0429C002E4062 /* Rule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34827BA21DB0429C002E4062 /* Rule.swift */; };
 		3485988D1DAE969300918CB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485988C1DAE969300918CB7 /* AppDelegate.swift */; };
 		3485988F1DAE969300918CB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3485988E1DAE969300918CB7 /* ViewController.swift */; };
 		348598921DAE969300918CB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348598901DAE969300918CB7 /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		34827BA01DB041E7002E4062 /* RuleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuleTests.swift; sourceTree = "<group>"; };
+		34827BA21DB0429C002E4062 /* Rule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rule.swift; sourceTree = "<group>"; };
 		348598891DAE969300918CB7 /* Gomoku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gomoku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3485988C1DAE969300918CB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3485988E1DAE969300918CB7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +89,7 @@
 		3485988B1DAE969300918CB7 /* Gomoku */ = {
 			isa = PBXGroup;
 			children = (
+				34827BA21DB0429C002E4062 /* Rule.swift */,
 				3485988C1DAE969300918CB7 /* AppDelegate.swift */,
 				3485988E1DAE969300918CB7 /* ViewController.swift */,
 				348598901DAE969300918CB7 /* Main.storyboard */,
@@ -102,6 +107,7 @@
 		348598A01DAE969300918CB7 /* GomokuTests */ = {
 			isa = PBXGroup;
 			children = (
+				34827BA01DB041E7002E4062 /* RuleTests.swift */,
 				348598A11DAE969300918CB7 /* BoardTests.swift */,
 				348598A31DAE969300918CB7 /* Info.plist */,
 			);
@@ -217,6 +223,7 @@
 				348598AD1DAE973A00918CB7 /* Board.swift in Sources */,
 				348598B11DAE9E5000918CB7 /* Position.swift in Sources */,
 				348598AF1DAE9E3F00918CB7 /* Stone.swift in Sources */,
+				34827BA31DB0429C002E4062 /* Rule.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				348598A21DAE969300918CB7 /* BoardTests.swift in Sources */,
+				34827BA11DB041E7002E4062 /* RuleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
