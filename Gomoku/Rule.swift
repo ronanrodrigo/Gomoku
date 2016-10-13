@@ -14,9 +14,9 @@ class Rule {
         }
         
         for stone in [Stone.white, .black] {
-            if let stones = placedStonesByColor[stone], stones.count >= minimunValueForWinning {
-                for stoneColumn in stones {
-                    if !stones.contains(stoneColumn + 1) && stoneColumn != stones.last {
+            if let columns = placedStonesByColor[stone], columns.count >= minimunValueForWinning {
+                for column in columns {
+                    if !columns.contains(column + 1) && column != columns.last {
                         return false
                     }
                 }
