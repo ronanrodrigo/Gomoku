@@ -71,9 +71,17 @@ class RuleTests: XCTestCase {
         XCTAssertFalse(try rule.hasWinner(board: board))
     }
     
-    func testFiveWhiteStonesInAUnordenedRowHasWinner() throws {
+    func testFiveWhiteStonesInAnUnordenedRowHasWinner() throws {
         for column in [1, 3, 2, 4, 5] {
             try board.place(at: Position(row: 1, column: column), stone: .white)
+        }
+        
+        XCTAssertTrue(try rule.hasWinner(board: board))
+    }
+    
+    func testFiveBlackStonesInAnUnordenedRowHasWinner() throws {
+        for column in [1, 3, 2, 4, 5] {
+            try board.place(at: Position(row: 1, column: column), stone: .black)
         }
         
         XCTAssertTrue(try rule.hasWinner(board: board))
